@@ -55,7 +55,7 @@ O problema de negócio deste projeto é entender quais fatores influenciam a tax
 - Estatística
 - Ferramentas de limpeza e visualização de dados
 
-# 5. Principais Insights Retirados do Projeto
+# 5. Principais insights retirados do projeto
 
 - Quantidade de quartos por residência:
 Existe uma média de cerca de 6,28 quartos por habitação (variável numero_medio_quartos_por_residencia).
@@ -73,7 +73,7 @@ O modelo de regressão apresentou boa performance com um coeficiente R² acima d
 # 6. Modelagem
 
 ### 6.1 Carregamento dos Dados:
-   - Dados foram carregados e inicialmente explorados para entender a estrutura e as características das variáveis.
+   - Os dados deste estudo foram carregados através de uma arquivo csv que se encontra na pasta deste repositório. 
 
 ### 6.2 Exploração e Limpeza dos Dados:
    - Análise de correlação inicial indicou a presença de outliers que afetaram as correlações observadas.
