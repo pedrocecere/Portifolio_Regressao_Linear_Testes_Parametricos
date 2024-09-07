@@ -1,8 +1,5 @@
 # TESTES PARAMÉTRICOS E REGRESSÃO LINEAR PARA TAXA DE OCUPAÇÃO DE IMÓVEIS
-
-![Uploading Entenda-a-Taxa-de-Ocupacao-do-Devedor-Fiduciante.jpg…]()
-
-
+![https__img migalhas com br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2023__SL__02__SL__15__SL__d90cd13d-88c0-4f57-9aa5-c7878b109c0b jpg _PROC_CP65](https://github.com/user-attachments/assets/bff56a72-8584-40f8-b0a9-412dd4347128)
 # 1. Descrição do projeto
 
 - Este projeto tem como objetivo principal analisar as variáveis que influenciam diretamente a taxa de ocupação de imóveis em uma cidade específica. A análise estatística foi conduzida com uma forte ênfase em testes paramétricos, garantindo que todas as decisões fossem embasadas em fundamentos estatísticos sólidos.
