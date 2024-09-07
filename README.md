@@ -73,11 +73,18 @@ O modelo de regressão apresentou boa performance com um coeficiente R² acima d
 # 6. Modelagem
 
 ### 6.1 Carregamento dos Dados:
-   - Os dados deste estudo foram carregados através de uma arquivo csv que se encontra na pasta deste repositório. 
+   - Os dados deste estudo foram carregados através de uma arquivo csv que se encontra na pasta deste repositório. Os pacotes foram instalados e importados para utilização no modelo.
 
 ### 6.2 Exploração e Limpeza dos Dados:
    - Análise de correlação inicial indicou a presença de outliers que afetaram as correlações observadas.
-   - Dados foram limpos removendo outliers para obter uma visão mais precisa das relações entre variáveis.
+   - A análise exploratória iniciou verificando a presença ou não de valores nulos no dataset, eles representam problemas para testes estatísticos e modelos de machine learning.
+   - Foi feita uma análise das estatíticas gerais do conjunto de dados utilizando o método describe(), desta análise podemos entender algumas variáveis provavelmente contém outliers.
+   - Plotamos a distribuição da variável dependente (taxa de ocupação), percebemos que existe uma assimatria. Foi utilizado o método skewness para verificar a assimetria de todo conjunto. Essa assimetria foi corrigida utilizando a tranformação de log(), para deixar os dados na mesma escala.
+   - Após ajustar nossa variável alvo partimos para as análises bivariadas, através da matriz de correlação percebemos que algumas variáveis tinham forte correlação, o que significa um problema para nosso modelo estatístico.
+   - Verificamos todas as correlações altas (entre 0.59 e 0.99), sejam positivas ou negativas
+   - Mesmo sabendo do problema destas variáveis, deixamos elas no conjunto para provocar o erro e avaliar o resultado.
+
+  
    - Identificação e tratamento de multicolinearidade usando o Variance Inflation Factor (VIF). Variáveis com VIF > 5 foram removidas.
 
 ### 6.3 Testes Estatísticos:
