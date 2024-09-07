@@ -1,6 +1,7 @@
 # TESTES PARAMÉTRICOS E REGRESSÃO LINEAR PARA TAXA DE OCUPAÇÃO DE IMÓVEIS
 
-![https__img migalhas com br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2023__SL__02__SL__15__SL__d90cd13d-88c0-4f57-9aa5-c7878b109c0b jpg _PROC_CP65](https://github.com/user-attachments/assets/1ffa7a40-4370-4abb-9880-7d492e7e452b)
+![Uploading Entenda-a-Taxa-de-Ocupacao-do-Devedor-Fiduciante.jpg…]()
+
 
 # 1. Descrição do projeto
 
