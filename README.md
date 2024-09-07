@@ -32,11 +32,7 @@ O problema de negócio deste projeto é entender quais fatores influenciam a tax
 - **Taxa de Ocupação de Imóveis:** Percentual de imóveis ocupados em relação ao total de imóveis disponíveis. Influenciado por fatores como localização, tamanho e condições do imóvel.
 - **Mobilidade Urbana:** Relaciona-se à facilidade com que os residentes podem se deslocar dentro da cidade. Impacta a atratividade de uma localização para ocupação de imóveis.
 - **Saneamento:** Refere-se à infraestrutura para gestão de resíduos e fornecimento de água limpa. Afeta diretamente a qualidade de vida e, consequentemente, a taxa de ocupação dos imóveis.
-- **Outliers:** Valores extremos que podem distorcer a análise dos dados. Importante identificá-los e tratá-los para garantir a precisão das análises estatísticas.
-- **Multicolinearidade:** Situação onde duas ou mais variáveis independentes estão altamente correlacionadas, o que pode dificultar a interpretação dos coeficientes da regressão.
-- **Homocedasticidade:** Propriedade dos resíduos do modelo de regressão de terem variância constante. A heterocedasticidade pode levar a erros em testes estatísticos e previsões.
-- **Normalidade dos Resíduos:** Os resíduos devem seguir uma distribuição normal para que os testes estatísticos sejam válidos. A falta de normalidade pode indicar a necessidade de ajustes no modelo.
-
+  
 # 3. Pipeline de solução
 
 - Entendendo o problema de negócio
@@ -57,22 +53,21 @@ O problema de negócio deste projeto é entender quais fatores influenciam a tax
   - Sciki-Learn
   - Pylab   
 - Estatística
-- Limpeza de dados
-- Visuzalização
+- Ferramentas de limpeza e visualização de dados
 
 # 6. Principais Insights Retirados do Projeto
 
-### 6.1 Correlação Positiva Significativa: 
+- Correlação Positiva Significativa: 
 A taxa de ocupação das casas aumenta com o número médio de quartos, indicando que imóveis com mais quartos tendem a ter maior taxa de ocupação.
-### 6.2 Efeito dos Outliers:
+- Efeito dos Outliers:
 A alta correlação inicial entre variáveis foi significativamente reduzida após a remoção de outliers, sugerindo que os outliers tinham um impacto considerável nas correlações observadas.
-### 6.3 Influência de Desabrigados: 
+- Influência de Desabrigados: 
 Bairros com maior número de desabrigados apresentam menor taxa de ocupação de residências, indicando uma relação inversa entre a quantidade de desabrigados e a ocupação dos imóveis.
-### 6.4 Multicolinearidade: 
+- Multicolinearidade: 
 As variáveis com alta multicolinearidade foram identificadas e removidas para melhorar a precisão do modelo.
-### 6.5 Performance do Modelo: 
+- Performance do Modelo: 
 O modelo de regressão apresentou boa performance com um coeficiente R² acima de 0.8, mas ajustes foram necessários para atender às suposições de homocedasticidade, normalidade dos resíduos e independência dos erros.
-### 6.6 Validação das Suposições: 
+- Validação das Suposições: 
 O modelo final mostrou que a maioria das suposições da regressão linear foi satisfeita, com exceção da normalidade dos resíduos, que indicou a necessidade de considerar ajustes adicionais ou a aceitação de um modelo "bom o suficiente".
 
 # 7. Modelagem
