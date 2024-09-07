@@ -55,44 +55,44 @@ O problema de negócio deste projeto é entender quais fatores influenciam a tax
 - Estatística
 - Ferramentas de limpeza e visualização de dados
 
-# 6. Principais Insights Retirados do Projeto
+# 5. Principais Insights Retirados do Projeto
 
-- Correlação Positiva Significativa: 
-A taxa de ocupação das casas aumenta com o número médio de quartos, indicando que imóveis com mais quartos tendem a ter maior taxa de ocupação.
-- Efeito dos Outliers:
-A alta correlação inicial entre variáveis foi significativamente reduzida após a remoção de outliers, sugerindo que os outliers tinham um impacto considerável nas correlações observadas.
+- Quantidade de quartos por residência:
+Existe uma média de cerca de 6,28 quartos por habitação (variável numero_medio_quartos_por_residencia).
+- Taxa de criminalidade e Proporção de lotes:
+Há uma variação muito grande para a taxa de criminalidade (variável taxa_criminalidade), pois podemos ver que a taxa de criminalidade mais baixa é de 0,006, enquanto a mais alta é de 88,97. Provavelmente são valores outliers, pois são muito diferentes da mediana e até 75% do quarti. O mesmo comportamento se percebe na variável de proporção de lotes.
 - Influência de Desabrigados: 
 Bairros com maior número de desabrigados apresentam menor taxa de ocupação de residências, indicando uma relação inversa entre a quantidade de desabrigados e a ocupação dos imóveis.
-- Multicolinearidade: 
-As variáveis com alta multicolinearidade foram identificadas e removidas para melhorar a precisão do modelo.
+- Correlação entre variáveis: 
+Observamos uma correlação significativa entre as variáveis taxa de poluição e proporção de empresas. A variável taxa de poluição também apresenta uma alta correlação positiva com a idade média das residências e uma correlação negativa significativa com a distância ao centro.
+A proporção de empresas tem uma alta correlação com o imposto residencial.
+A taxa de ocupação mostra uma alta correlação com o número médio de quartos por residência e uma correlação negativa significativa com a taxa de desabrigados.
 - Performance do Modelo: 
 O modelo de regressão apresentou boa performance com um coeficiente R² acima de 0.8, mas ajustes foram necessários para atender às suposições de homocedasticidade, normalidade dos resíduos e independência dos erros.
-- Validação das Suposições: 
-O modelo final mostrou que a maioria das suposições da regressão linear foi satisfeita, com exceção da normalidade dos resíduos, que indicou a necessidade de considerar ajustes adicionais ou a aceitação de um modelo "bom o suficiente".
 
-# 7. Modelagem
+# 6. Modelagem
 
-### 7.1 Carregamento dos Dados:
+### 6.1 Carregamento dos Dados:
    - Dados foram carregados e inicialmente explorados para entender a estrutura e as características das variáveis.
 
-### 7.2 Exploração e Limpeza dos Dados:
+### 6.2 Exploração e Limpeza dos Dados:
    - Análise de correlação inicial indicou a presença de outliers que afetaram as correlações observadas.
    - Dados foram limpos removendo outliers para obter uma visão mais precisa das relações entre variáveis.
    - Identificação e tratamento de multicolinearidade usando o Variance Inflation Factor (VIF). Variáveis com VIF > 5 foram removidas.
 
-### 7.3 Testes Estatísticos:
+### 6.3 Testes Estatísticos:
    - **Teste de Linearidade:** Verificação se a relação entre variáveis independentes e dependentes é linear. Utilização do teste linear_rainbow.
    - **Teste de Independência dos Erros:** Aplicação do Teste de Durbin-Watson para verificar autocorrelação nos resíduos.
    - **Teste de Homocedasticidade:** Aplicação do Teste de Goldfeld-Quandt para verificar se a variabilidade dos resíduos é constante.
    - **Teste de Normalidade dos Resíduos:** Criação de QQ Plot e aplicação do Teste de Shapiro-Wilk para verificar se os resíduos seguem uma distribuição normal.
 
-### 7.4 Validações:
+### 6.4 Validações:
    - **Linearidade:** Supondo que a relação é linear, confirmada pelo gráfico e teste linear_rainbow.
    - **Independência dos Erros:** Confirmado pelo Teste de Durbin-Watson e análise visual dos resíduos.
    - **Homocedasticidade:** Confirmado pelo Teste de Goldfeld-Quandt, indicando que a variabilidade dos resíduos é constante.
    - **Normalidade dos Resíduos:** Identificado que os resíduos não passaram no teste de normalidade, sugerindo a necessidade de ajustes adicionais ou aceitação do modelo com limitações.
 
-### 7.5 Regras Aplicadas e Modelo Detalhado:
+### 6.5 Regras Aplicadas e Modelo Detalhado:
    - Variáveis com alta multicolinearidade foram removidas para melhorar a precisão do modelo.
    - Variáveis com valor-p maior que 0.05 foram removidas, focando apenas nas variáveis com significância estatística.
    - O modelo final é uma regressão linear múltipla ajustada para satisfazer a maioria das suposições, com algumas limitações reconhecidas.
