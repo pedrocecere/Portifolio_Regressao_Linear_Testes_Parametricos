@@ -39,7 +39,26 @@ O problema de negócio deste projeto é entender quais fatores influenciam a tax
 
 # 3. Pipeline de solução
 
+- Entendendo o problema de negócio
+- Análise exploratória dos dados
+- Preparação e limpeza dos dados
+- Aplicação dos testes estatísticos
+- Criação do modelo de Regressão Linear
+
 # 4. Tecnologias e ferramentas
+
+- Python
+  - Pandas
+  - Numpy
+  - Matplotlib
+  - Seaborn
+  - Statsmodels
+  - Scipy
+  - Sciki-Learn
+  - Pylab   
+- Estatística
+- Limpeza de dados
+- Visuzalização
 
 # 6. Principais Insights Retirados do Projeto
 
