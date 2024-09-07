@@ -1,5 +1,7 @@
 # TESTES PARAMÉTRICOS E REGRESSÃO LINEAR PARA TAXA DE OCUPAÇÃO DE IMÓVEIS
 
+
+
 # 1. Descrição do projeto
 
 - Este projeto tem como objetivo principal analisar as variáveis que influenciam diretamente a taxa de ocupação de imóveis em uma cidade específica. A análise estatística foi conduzida com uma forte ênfase em testes paramétricos, garantindo que todas as decisões fossem embasadas em fundamentos estatísticos sólidos.
