@@ -82,24 +82,24 @@ O modelo de regressão apresentou boa performance com um coeficiente R² acima d
    - Plotamos a distribuição da variável dependente (taxa de ocupação), percebemos que existe uma assimatria. Foi utilizado o método skewness para verificar a assimetria de todo conjunto. Essa assimetria foi corrigida utilizando a tranformação de log(), para deixar os dados na mesma escala.
    - Após ajustar nossa variável alvo partimos para as análises bivariadas, através da matriz de correlação percebemos que algumas variáveis tinham forte correlação, o que significa um problema para nosso modelo estatístico.
    - Verificamos todas as correlações altas (entre 0.59 e 0.99), sejam positivas ou negativas
-   - Mesmo sabendo do problema destas variáveis, deixamos elas no conjunto para provocar o erro e avaliar o resultado.
+   - Mesmo sabendo do problema destas variáveis, deixamos elas no conjunto para provocar o erro e avaliar o resultado.  
 
-  
-   - Identificação e tratamento de multicolinearidade usando o Variance Inflation Factor (VIF). Variáveis com VIF > 5 foram removidas.
+### 6.3 Validações e métodos:
+   - **Variance Inflation Factor (VIF)**: Utilizaremos o Variance Inflation Factor (VIF), para verificar se há multicolinearidade nos dados. O Variance Inflation Factor (VIF) é uma medida que     quantifica o quanto a variância de um estimador de regressão (coeficiente) é aumentada devido à multicolinearidade na regressão múltipla. A multicolinearidade ocorre quando há correlações altas   entre duas ou mais variáveis explicativas (independentes) em um modelo de regressão, o que pode dificultar a estimação dos coeficientes da regressão com precisão.
+   - **Standar Scaler**: Utilizamos o StandarScaler() para padronizar a escala dos dados, pois nosso modelo de Regressão Linear supões que os dados estejam na mesma escala.
 
-### 6.3 Testes Estatísticos:
+### 6.4 Testes Estatísticos Aplicados:
+   - **Teste de Regressão Linear**: Utilizamos o modelo de Regressão Lienar do statsmodels para verificar a relação multipla entre variáveis do dataset.
    - **Teste de Linearidade:** Verificação se a relação entre variáveis independentes e dependentes é linear. Utilização do teste linear_rainbow.
    - **Teste de Independência dos Erros:** Aplicação do Teste de Durbin-Watson para verificar autocorrelação nos resíduos.
    - **Teste de Homocedasticidade:** Aplicação do Teste de Goldfeld-Quandt para verificar se a variabilidade dos resíduos é constante.
    - **Teste de Normalidade dos Resíduos:** Criação de QQ Plot e aplicação do Teste de Shapiro-Wilk para verificar se os resíduos seguem uma distribuição normal.
 
-### 6.4 Validações:
-   - **Linearidade:** Supondo que a relação é linear, confirmada pelo gráfico e teste linear_rainbow.
-   - **Independência dos Erros:** Confirmado pelo Teste de Durbin-Watson e análise visual dos resíduos.
-   - **Homocedasticidade:** Confirmado pelo Teste de Goldfeld-Quandt, indicando que a variabilidade dos resíduos é constante.
-   - **Normalidade dos Resíduos:** Identificado que os resíduos não passaram no teste de normalidade, sugerindo a necessidade de ajustes adicionais ou aceitação do modelo com limitações.
-
-### 6.5 Regras Aplicadas e Modelo Detalhado:
+### 6.5 Regras Aplicadas e Resultado do Modelo:
    - Variáveis com alta multicolinearidade foram removidas para melhorar a precisão do modelo.
    - Variáveis com valor-p maior que 0.05 foram removidas, focando apenas nas variáveis com significância estatística.
    - O modelo final é uma regressão linear múltipla ajustada para satisfazer a maioria das suposições, com algumas limitações reconhecidas.
+   - Obtivemos um R-squared de aproximadamente 0.8, o que indica que nossas variáveis independentes explicam 80% da variável dependente Taxa de Ocupação, este é um resultado considerado satisfatório para o escopo do projeto.
+
+![Captura de tela 2024-09-09 101850](https://github.com/user-attachments/assets/9432a7c9-356e-431e-b84f-a1d7533a1289)
+
